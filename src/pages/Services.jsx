@@ -171,25 +171,6 @@ const Services = () => {
                   </li>
                 ))}
               </ul>
-              <div className="mt-6 text-center">
-                <button className="text-amber-600 hover:text-amber-700 font-medium inline-flex items-center">
-                  View {area.city} Projects
-                  <svg
-                    className="w-4 h-4 ml-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    />
-                  </svg>
-                </button>
-              </div>
             </div>
           ))}
         </div>
@@ -206,12 +187,17 @@ const Services = () => {
             requirements
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-4 px-12 rounded-lg text-lg transition duration-300 transform hover:scale-105 shadow-lg">
-              Get a Free Quote
-            </button>
-            <button className="border-2 border-white text-white hover:bg-gray-700 font-bold py-4 px-12 rounded-lg text-lg transition duration-300 transform hover:scale-105">
-              Consult Our Experts
-            </button>
+            <a href="tel:+918958051888">
+              <button className="bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-4 px-12 rounded-lg text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                Get a Free Quote
+              </button>
+            </a>
+
+            <a href="tel:+918958051888">
+              <button className="border-2 border-white text-white hover:bg-gray-700 font-bold py-4 px-12 rounded-lg text-lg transition duration-300 transform hover:scale-105">
+                Consult Our Experts
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -248,9 +234,11 @@ const ServiceCard = ({ service }) => (
         <p className="text-gray-700 font-medium">{service.note}</p>
       </div>
 
-      <button className="w-full bg-gray-900 hover:bg-amber-600 text-white font-medium py-3 px-6 rounded-lg transition duration-300">
-        {service.cta}
-      </button>
+      <a href="tel:+918958051888">
+        <button className="w-full bg-gray-900 hover:bg-amber-600 text-white font-medium py-3 px-6 rounded-lg transition duration-300">
+          {service.cta}
+        </button>
+      </a>
     </div>
   </div>
 );

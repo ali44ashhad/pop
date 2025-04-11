@@ -36,12 +36,19 @@ const Home = () => {
             nationwide
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-4 px-10 rounded-lg text-lg transition duration-300 transform hover:scale-105 shadow-lg">
-              Get Free Estimate
-            </button>
-            <button className="border-2 border-white text-white hover:bg-gray-800 font-bold py-4 px-10 rounded-lg text-lg transition duration-300 transform hover:scale-105">
-              View Our Work
-            </button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="tel:+918958051888">
+                <button className="bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-4 px-10 rounded-lg text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                  Get Free Estimate
+                </button>
+              </a>
+
+              <a href="/projects">
+                <button className="border-2 border-white text-white hover:bg-gray-800 font-bold py-4 px-10 rounded-lg text-lg transition duration-300 transform hover:scale-105">
+                  View Our Work
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -51,7 +58,9 @@ const Home = () => {
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <div className="text-4xl font-bold text-amber-500 mb-2">150+</div>
+              <div className="text-4xl font-bold text-amber-500 mb-2">
+                1500+
+              </div>
               <div className="text-gray-600">Projects Completed</div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
@@ -59,11 +68,11 @@ const Home = () => {
               <div className="text-gray-600">Years Experience</div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <div className="text-4xl font-bold text-amber-500 mb-2">50+</div>
+              <div className="text-4xl font-bold text-amber-500 mb-2">500+</div>
               <div className="text-gray-600">Satisfied Clients</div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <div className="text-4xl font-bold text-amber-500 mb-2">5</div>
+              <div className="text-4xl font-bold text-amber-500 mb-2">5+</div>
               <div className="text-gray-600">Cities Served</div>
             </div>
           </div>
@@ -325,7 +334,10 @@ const Home = () => {
             project
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-4 px-12 rounded-lg text-lg transition duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center">
+            <a
+              href="tel:+918958051888"
+              className="bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-4 px-12 rounded-lg text-lg transition duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center"
+            >
               <svg
                 className="w-5 h-5 mr-2"
                 fill="none"
@@ -340,9 +352,13 @@ const Home = () => {
                   d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                 />
               </svg>
-              Call Now: +91 XXXX XXX XXX
-            </button>
-            <button className="border-2 border-white text-white hover:bg-gray-800 font-bold py-4 px-12 rounded-lg text-lg transition duration-300 transform hover:scale-105 flex items-center justify-center">
+              Call Now: +91 8958051888
+            </a>
+
+            <a
+              href="mailto:contact@akramcontractor.com"
+              className="border-2 border-white text-white hover:bg-gray-800 font-bold py-4 px-12 rounded-lg text-lg transition duration-300 transform hover:scale-105 flex items-center justify-center"
+            >
               <svg
                 className="w-5 h-5 mr-2"
                 fill="none"
@@ -358,7 +374,7 @@ const Home = () => {
                 />
               </svg>
               Email Inquiry
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -381,8 +397,6 @@ const ProjectCard = ({ title, image, alt }) => (
     </div>
   </div>
 );
-
-// Service Card Component
 const ServiceCard = ({ service }) => (
   <div className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition duration-300 border-t-4 border-amber-500">
     <div className="p-8">
@@ -407,9 +421,11 @@ const ServiceCard = ({ service }) => (
         ))}
       </ul>
 
-      <button className="w-full bg-gray-900 hover:bg-amber-600 text-white font-medium py-3 px-6 rounded-lg transition duration-300">
-        {service.cta}
-      </button>
+      <a href="tel:+918958051888">
+        <button className="w-full bg-gray-900 hover:bg-amber-600 text-white font-medium py-3 px-6 rounded-lg transition duration-300">
+          {service.cta}
+        </button>
+      </a>
     </div>
   </div>
 );

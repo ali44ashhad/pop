@@ -805,12 +805,17 @@ const Projects = () => {
             construction and POP services
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gray-900 hover:bg-gray-800 text-white font-bold py-4 px-12 rounded-lg text-lg transition duration-300 transform hover:scale-105 shadow-lg">
-              Get Free Consultation
-            </button>
-            <button className="bg-white hover:bg-gray-100 text-gray-900 font-bold py-4 px-12 rounded-lg text-lg transition duration-300 transform hover:scale-105">
-              Call: +91 XXXX XXX XXX
-            </button>
+            <a href="tel:+918958051888">
+              <button className="bg-gray-900 hover:bg-gray-800 text-white font-bold py-4 px-12 rounded-lg text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                Get Free Consultation
+              </button>
+            </a>
+
+            <a href="tel:+918958051888">
+              <button className="bg-white hover:bg-gray-100 text-gray-900 font-bold py-4 px-12 rounded-lg text-lg transition duration-300 transform hover:scale-105">
+                Call: +91 89580 51888
+              </button>
+            </a>
           </div>
         </div>
       </div>

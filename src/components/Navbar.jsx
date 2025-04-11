@@ -69,7 +69,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden pb-4">
+          <div className="md:hidden border-t border-gray-200 pb-4">
             <div className="flex flex-col space-y-3 px-2 pt-2">
               <Link
                 to="/"

@@ -85,10 +85,10 @@ const Contact = () => {
             </p>
             <div className="text-center">
               <a
-                href="tel:+911234567890"
+                href="tel:+9118958051888"
                 className="text-amber-600 hover:text-amber-700 text-lg font-medium"
               >
-                +91 123 456 7890
+                +91 8958051888
               </a>
               <p className="text-gray-500 text-sm mt-1">Mon-Sat, 9am-6pm</p>
             </div>
@@ -181,7 +181,7 @@ const Contact = () => {
                 <div className="flex items-center">
                   <FaPhone className="text-amber-500 mr-3" />
                   <span className="text-gray-700">
-                    Emergency Contact: +91 98765 43210 (24/7)
+                    Emergency Contact: +91 8958051888 (24/7)
                   </span>
                 </div>
               </div>
@@ -416,12 +416,17 @@ const Contact = () => {
             Contact us today for a free consultation and estimate
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-4 px-12 rounded-lg text-lg transition duration-300 transform hover:scale-105 shadow-lg">
-              Call Now
-            </button>
-            <button className="border-2 border-white text-white hover:bg-gray-700 font-bold py-4 px-12 rounded-lg text-lg transition duration-300 transform hover:scale-105">
-              Email Us
-            </button>
+            <a href="tel:+918958051888">
+              <button className="bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-4 px-12 rounded-lg text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                Call Now
+              </button>
+            </a>
+
+            <a href="mailto:contact@akramcontractor.com">
+              <button className="border-2 border-white text-white hover:bg-gray-700 font-bold py-4 px-12 rounded-lg text-lg transition duration-300 transform hover:scale-105">
+                Email Us
+              </button>
+            </a>
           </div>
         </div>
       </div>

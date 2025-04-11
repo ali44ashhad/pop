@@ -185,37 +185,39 @@ const About = () => {
 
       {/* Team Section */}
       <div className="bg-gray-900 py-20">
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-white sm:text-4xl relative inline-block">
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-white relative inline-block">
               <span className="relative z-10">Our Leadership</span>
-              <span className="absolute bottom-0 left-0 w-full h-2 bg-amber-400 z-0 opacity-70 -mb-1"></span>
+              <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-amber-400 z-0 opacity-80 -mb-2 rounded-full"></span>
             </h2>
-            <p className="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">
-              The experienced professionals guiding our company
+            <p className="mt-6 text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto">
+              Meet the experienced professionals driving our success forward.
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
-                className="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
+                className="bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
               >
                 <div className="h-64 overflow-hidden">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover transition duration-500 hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-white mb-1">
+                  <h3 className="text-2xl font-semibold text-white mb-1">
                     {member.name}
                   </h3>
-                  <p className="text-amber-400 mb-4">{member.position}</p>
-                  <p className="text-gray-300">{member.bio}</p>
-                  <div className="mt-4 pt-4 border-t border-gray-700">
+                  <p className="text-amber-400 font-medium mb-3">
+                    {member.position}
+                  </p>
+                  <p className="text-gray-300 text-sm">{member.bio}</p>
+                  <div className="mt-5 pt-4 border-t border-gray-700">
                     <p className="text-gray-400 text-sm flex items-center">
                       <span className="inline-block w-2 h-2 rounded-full bg-amber-400 mr-2"></span>
                       {member.expertise}
@@ -242,9 +244,13 @@ const About = () => {
             <button className="bg-gray-900 hover:bg-gray-800 text-white font-bold py-4 px-12 rounded-lg text-lg transition duration-300 transform hover:scale-105 shadow-lg">
               Get Free Consultation
             </button>
-            <button className="bg-white hover:bg-gray-100 text-gray-900 font-bold py-4 px-12 rounded-lg text-lg transition duration-300 transform hover:scale-105">
-              Call: +91 XXXX XXX XXX
-            </button>
+
+            <a
+              href="tel:+918950518888"
+              className="bg-white hover:bg-gray-100 text-gray-900 font-bold py-4 px-12 rounded-lg text-lg transition duration-300 transform hover:scale-105 text-center"
+            >
+              Call: +91 895051888
+            </a>
           </div>
         </div>
       </div>
@@ -284,28 +290,18 @@ const processSteps = [
 // Team Data
 const teamMembers = [
   {
-    name: "Harpreet Singh",
+    name: "Shakeel Ahamad",
     position: "Founder & CEO",
     bio: "With over 15 years in construction and POP specialization, Harpreet founded the company with a vision for quality craftsmanship.",
     expertise: "Specializes in architectural POP designs",
-    image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    image: "https://img.icons8.com/?size=100&id=11220&format=png&color=40C057",
   },
   {
-    name: "Rajiv Sharma",
+    name: "Waseem Ahmad",
     position: "Construction Head",
-    bio: "Civil engineer with 12+ years experience managing residential and commercial construction projects.",
+    bio: "With 8+ years in the construction industry, leads project execution with a strong focus on quality, safety, and timely delivery.",
     expertise: "Expert in structural integrity and project management",
-    image:
-      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
-  },
-  {
-    name: "Priya Kapoor",
-    position: "Design Head",
-    bio: "Interior design specialist focusing on functional yet beautiful spaces with extensive POP expertise.",
-    expertise: "Creates innovative POP ceiling and wall designs",
-    image:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    image: "https://img.icons8.com/?size=100&id=11220&format=png&color=40C057",
   },
 ];
 
